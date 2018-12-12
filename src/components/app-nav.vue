@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-//todo: mixin으로 뺄 것
+//TODO: mixin으로 뺄 것
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic')
 
 $english-font: 'Helvetica', san-serif

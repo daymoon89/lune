@@ -4,8 +4,8 @@
       <div class="outliner">
         <div class="outliner-text-set">
           <div class="main-title title-one">Le Voyage</div>
-            <div class="main-title title-two">Dans</div>
-            <div class="main-title title-three">La Lune<div class="dot"></div></div>
+          <div class="main-title title-two">Dans</div>
+          <div class="main-title title-three">La Lune<div class="dot"></div></div>
             
           <div class="main-slogan">In the heart of the French Alps,
                                   in the north east of the Rhone Alps region lies the village of Les Houches.
@@ -32,12 +32,15 @@ export default {
 </script>
 
 <style lang="sass">
-//todo: mixins으로 뺄 것
+//TODO: mixins으로 뺄 것
 //google font
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic')
   
 $english-font: 'Helvetica', san-serif
 $korean-font: 'Nanum Gothic', sans-serif
+
+html
+  font-size: 16px
 
 body
   width: 100%
@@ -56,24 +59,30 @@ body
   margin: 0 auto
 
   .outliner
-    height: 75vh
+    width: 100%
+    padding-top: 56.25%
+    height: 0
     border: 15px
+    position: relative
     margin: 0 auto
     border-color: rgba(151,120,96,100)
     box-shadow: 5px 5px 30px rgba(11,11,11,50)
     border-style: solid
 
     .outliner-text-set
+      position: absolute
+      top: 25%
+      left: -6.6%
       width: 52.6%
       height: 66.1%
-      margin: 12.5% -6.6%
-      font-family: Helvetica, sans-serif
+      // margin: 12.5vh -6.6%
+      font-family: $english-font
 
       .main-title
-        font-size: 8rem
+        font-size: 7vw
         font-weight: bold
         color: rgb(132,164,196)
-        line-height: 95px
+        line-height: 0.7em
         letter-spacing: -0.1em
         
       .title-three
@@ -90,7 +99,7 @@ body
 
       .main-slogan
         width: 80%
-        height: 80px
+        // height: 80px
         font-size: 25px
         color: rgb(132,164,196)
 
