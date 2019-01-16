@@ -5,6 +5,7 @@
       <div class="tips">tips</div>
       <div class="plan">plan</div>
       <div class="pomodoro">pomodoro</div>
+      <div class="user"></div>
     </div>
   </div>
 </template>
@@ -22,34 +23,36 @@ export default {
 $english-font: 'Helvetica', san-serif
 $korean-font: 'Nanum Gothic', sans-serif
 
+html
+  font-size: 16px
+
 .nav
   height: 60px
   line-height: 60px
-  width: 75%
+  width: 70%
   margin: 0 auto
   text-transform: uppercase
 
   .logo
     float: left
     color: white
-    font-size: 20px
-    // margin-left: 45px
+    font-size: 1.8em
 
   .menu
     display: inline
     float: right
     font-family: $english-font
     color: #83868E
-    font-size: 19px
+    font-size: 1.18rem
     font-weight: bold
 
     .tips
       display: inline
-      margin-right: 45px
+      margin-right: 2.8vw
       
     .plan
       display: inline
-      margin-right: 45px
+      margin-right: 2.8vw
 
     .pomodoro
       display: inline
