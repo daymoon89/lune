@@ -13,12 +13,17 @@
           </div>
         </div>
       </div>
-
-      <div class="travel-section">
-        <div class="moon-textbox"></div>
-        <div class="moon-text-title"></div>
-        <div class="moon-sentence">
-          <p></p>
+      <div class="vertical-section">
+        <div class="rocket-icon">ROCKET-ICON</div>
+      </div>
+      <div class="horizontal-section first-section">
+        <div class="function-title">
+          달을 여행 할 준비
+        </div>
+        <div class="function-explained">
+          우리의 목표가 달을 여행 하는 것이라고 상상해 보세요<br>
+          달을 여행하기란 생각만큼 쉽지 않을겁니다<br>
+          우리는 현실적이며 철저하게 준비 해야 합니다
         </div>
       </div>
     </div>
@@ -50,85 +55,90 @@ body
 // mixins
 
 .main
-  height: 500vh
+  height: 300vh
   margin: 0
   padding: 0
 
-.container
-  width: 75%
-  margin: 0 auto
-
-  .outliner
-    width: 100%
-    padding-top: 56.25%
-    height: 0
-    border: 15px
-    position: relative
+  .container
+    width: 78.7%
     margin: 0 auto
-    border-color: rgba(151,120,96,100)
-    box-shadow: 5px 5px 30px rgba(11,11,11,50)
-    border-style: solid
 
-    .outliner-text-set
-      position: absolute
-      top: 25%
-      left: -6.6%
-      width: 52.6%
-      height: 66.1%
-      // margin: 12.5vh -6.6%
-      font-family: $english-font
+    .outliner
+      width: 93%
+      padding-top: 49.25%
+      border: 1vw
+      position: relative
+      border-color: rgba(151,120,96,100)
+      box-shadow: 0.3vw 0.3vw 2vw rgba(11,11,11,50)
+      border-style: solid
+      vertical-align: center
 
-      .main-title
-        font-size: 7vw
-        font-weight: bold
-        color: rgb(132,164,196)
-        line-height: 0.7em
-        letter-spacing: -0.1em
-        
-      .title-three
-        margin-bottom: 3.3%
+      .outliner-text-set
+        position: absolute
+        font-family: $english-font
+        top: 18.5%
+        left: -7.7%
+        width: 52.6%
 
-      .dot
-        display: inline-block
-        border-radius: 50%
-        width: 30px
-        height: 30px
-        background-color: #FDFC00
-        margin: auto 2%
-        padding: 0
+        .main-title
+          font-size: 8.95vw
+          font-weight: bold
+          color: rgb(132,164,196)
+          line-height: 0.7em
+          letter-spacing: -0.1em
+          
+        .title-three
+          margin-bottom: 3.3%
 
-      .main-slogan
-        width: 80%
-        // height: 80px
-        font-size: 25px
-        color: rgb(132,164,196)
+        .dot
+          display: inline-block
+          border-radius: 50%
+          width: 2.5vw
+          height: 2.5vw
+          background-color: #FDFC00
+          margin: auto 2%
+          padding: 0
 
-//   .travel-section
-//     .moon-textbox
-//       // width: 600px
-//       // color: rgb(217,217,217)
-//       font-family: $korean-font
-//       float: right
-//       text-align: center
-//       // margin-top: 186px
-             
-//     .moon-text-title
-//       font-size: 45px
-//       // margin: 1rem 0 1rem 0
-        
-//     .moon-sentence
-//       font-size: 24px
-//       // width: 600px
-//       height: 90px
+        .main-slogan
+          width: 100%
+          font-size: 1.73vw
+          color: rgb(132,164,196)
+    
+  .vertical-section
+    float: left
+    // width: 38.5%
+    width: 45%
+    height: 175vh
+    background-color: rgb(3, 11, 36)
+    margin: 5% 2.5% 0 2.5%
+    text-align: center
+    z-index: 0
+    box-shadow: 2px 2px 22px black
+    padding-top: 8%
+    color: gray
 
-//       p
-//         // margin: 0.5rem
+    .rocket-icon
+      border: 1px solid gray
+      width: 11.1vw
+      height: 15.9vw
+      margin: 0 auto
 
-// .icon-section
-//   background-color: rgb(3,11,36)
-//   // width: 430px
-//   // height: 1600px
-//   // margin-top: 186px
-//   // margin-left: 150px
-//   box-shadow: 2px 2px 22px rgba(0,0,0,50)
+  .horizontal-section
+    width: 45%
+    float: right
+    text-align: center
+    font-family: $korean-font
+    color: rgb(217,217,217)
+    padding-top: 16.5%
+    padding-right: 5%
+
+    .function-title
+      font-size: 2.8vw
+      font-weight: bold
+      
+    .function-explained
+      font-size: 1.5vw
+      margin-top: 1.9vh
+      line-height: 1.87vw
+
 </style>
